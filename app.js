@@ -127,7 +127,7 @@ form.addEventListener('submit', async e => {
     const body = await res.json().catch(() => ({}));
     if (!res.ok || !body.ok) throw new Error(body.error || 'Something went wrong. Try again in a minute.');
     form.classList.add('done');
-    say(body.already ? 'You’re already on the list. We’ll be in touch.' : 'You’re in. Check your inbox.', 'ok');
+    say(body.already ? 'You’re already on the list. We’ll be in touch.' : 'You’re in. We’ll email you when it’s your turn.', 'ok');
     heroState = 'solving';
     setTimeout(() => { heroState = 'breathing'; }, 4200);
   } catch (err) {
