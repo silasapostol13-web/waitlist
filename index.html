@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atrium — connect your AI. See everything it does for you.</title>
+<meta name="description" content="One calm home for everything your AI handles: your day, your food, your training, your inbox. Connect ChatGPT, Claude, Muse or Grok. No more app to app. No more chatbots.">
+<meta property="og:title" content="Atrium — connect your AI. See everything it does for you.">
+<meta property="og:description" content="No more app to app. No more chatbots. Use the AI you already use most.">
+<meta property="og:image" content="media/icon.png">
+<link rel="icon" href="media/icon.png">
+<link rel="apple-touch-icon" href="media/icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top"><img src="media/icon.png" alt=""><span data-name>Atrium</span></a>
+  <!-- the first thing anyone reads: it works with the AI they already have -->
+  <div class="works" aria-label="Works with">
+    <span>Connect any AI</span>
+    <img src="logos/chatgpt.svg" alt="ChatGPT" title="ChatGPT">
+    <img src="logos/claude.svg" alt="Claude" title="Claude">
+    <img src="logos/muse.svg" alt="Muse" title="Muse" data-fallback="M" data-brand="muse">
+    <img src="logos/grok.svg" alt="Grok" title="Grok" data-fallback="G" data-brand="grok">
+  </div>
+  <a class="nav-cta" href="#join">Join the waitlist</a>
+</header>
+
+<main id="top">
+  <!-- HERO: pitch + connect on the left, the app on the right -->
+  <section class="hero" id="join">
+    <div class="blooms" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+    <div class="pitch">
+      <p class="eyebrow">For iPhone · early access</p>
+      <h1>Your AI does the work.<br><span class="grad"><span data-name>Atrium</span> shows you.</span></h1>
+      <p class="lede">One calm home for everything your AI handles: your day, your food, your training, your inbox. No more app to app. No more chatbots.</p>
+
+      <form id="waitlist" novalidate>
+        <p class="step">Connect the AI you already use</p>
+        <div class="connectors" role="radiogroup" aria-label="Which AI do you use most?">
+          <button type="button" class="connector chatgpt" data-ai="chatgpt" role="radio" aria-checked="false">
+            <img src="logos/chatgpt-white.svg" alt="" data-fallback="G"><span>Connect your ChatGPT</span>
+          </button>
+          <button type="button" class="connector claude" data-ai="claude" role="radio" aria-checked="false">
+            <img src="logos/claude.svg" alt="" data-fallback="C"><span>Connect your Claude</span>
+          </button>
+          <button type="button" class="connector muse" data-ai="meta" role="radio" aria-checked="false">
+            <img src="logos/muse.svg" alt="" data-fallback="M"><span>Connect your Muse</span>
+          </button>
+          <button type="button" class="connector grok" data-ai="grok" role="radio" aria-checked="false">
+            <img src="logos/grok-white.svg" alt="" data-fallback="G"><span>Connect your Grok</span>
+          </button>
+        </div>
+        <div class="emailrow">
+          <label class="sr" for="email">Email</label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@email.com" required>
+          <input class="hp" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="button primary" type="submit"><span>Join the waitlist</span></button>
+        </div>
+        <p class="formnote" id="formnote" role="status" aria-live="polite">Free to try. One email when it's your turn.</p>
+      </form>
+    </div>
+
+    <div class="stage" aria-hidden="true">
+      <canvas class="orb" id="heroOrb"></canvas>
+      <div class="phone tilt"><video src="media/opening.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+      <div class="chip c1"><b>Logged lunch</b><span>690 cal · 44g protein</span></div>
+      <div class="chip c2"><b>Added to your calendar</b><span>Coffee with Maya · 9:30</span></div>
+      <div class="chip c3"><b>3 emails need you</b><span>31 handled for you</span></div>
+    </div>
+  </section>
+
+  <!-- your AIs circle the orb: the picture of what the product is -->
+  <section class="orbit-sec" aria-labelledby="orbit-title">
+    <div class="orbit" id="orbit" aria-hidden="true">
+      <canvas class="orb" id="orbitOrb"></canvas>
+      <img class="ai" src="appicons/chatgpt.jpg" alt="">
+      <img class="ai" src="appicons/claude.jpg" alt="">
+      <img class="ai" src="appicons/muse.jpg" alt="">
+      <img class="ai" src="appicons/grok.jpg" alt="">
+      <span class="ai any">+</span>
+    </div>
+    <h2 id="orbit-title">Works with the AI you already use.</h2>
+    <p>ChatGPT, Claude, Muse, Grok, or any other. Connect it once from your phone, and everything it does for you lands in one place.</p>
+  </section>
+
+  <!-- the three lines people repeat to their friends -->
+  <section class="lines">
+    <p><b>No more app to app.</b> Calendar, meals, workouts and email, finally in one place.</p>
+    <p><b>No more chatbots.</b> You never type into <span data-name>Atrium</span>. The work just appears, already done.</p>
+    <p><b>Your AI, not ours.</b> Keep the assistant that already knows you.</p>
+  </section>
+
+  <!-- BENTO: uneven tiles, side by side -->
+  <section class="bento">
+    <article class="tile wide meal">
+      <div class="copy">
+        <p class="kicker">Health</p>
+        <h2>Text a photo of lunch.<br>It's already logged.</h2>
+        <p>Your AI works out the calories and macros. You open <span data-name>Atrium</span> and it's there, next to your runs, your lifts, and your Apple Health.</p>
+      </div>
+      <div class="phone"><video src="media/meal.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+    </article>
+
+    <article class="tile tall orbtile">
+      <canvas class="orb" id="storyOrb"></canvas>
+      <h3>You always know what it's doing.</h3>
+      <p>The orb is your AI inside the app. It searches while it reads your email, weaves while it works out your plate, and steps forward when it has something for you.</p>
+    </article>
+
+    <article class="tile cal">
+      <div class="phone small"><video src="media/event.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+      <div class="copy">
+        <p class="kicker">Calendar</p>
+        <h3>"Put coffee with Maya on my calendar."</h3>
+        <p>It lands on your real Apple Calendar. Plans change? Tell your AI and your day rearranges itself.</p>
+      </div>
+    </article>
+
+    <article class="tile inbox">
+      <div class="copy">
+        <p class="kicker">Inbox</p>
+        <h3>Thirty-four emails in. Three need you.</h3>
+        <p>Your AI reads everything and brings you only what matters, each with one tap to reply, get reminded, or book it.</p>
+      </div>
+      <div class="phone small"><video src="media/task.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+    </article>
+  </section>
+
+  <!-- how it works, left to right -->
+  <section class="how">
+    <h2>Set up in the time it takes to send a text.</h2>
+    <ol>
+      <li><span>1</span><b>Connect your AI</b><p>Pick ChatGPT, Claude, Muse or Grok. One step, no settings to learn.</p></li>
+      <li><span>2</span><b>Talk to it like always</b><p>"I had a burrito bowl." "Move my run to 6." "What's in my inbox?"</p></li>
+      <li><span>3</span><b>Open <span data-name>Atrium</span></b><p>Your whole day is there: organised, beautiful, and already up to date.</p></li>
+    </ol>
+  </section>
+
+  <!-- last ask -->
+  <section class="closer">
+    <div>
+      <h2>Be first in line.</h2>
+      <p>Early access is going out in the order people join.</p>
+    </div>
+    <a class="button primary big" href="#join">Join the waitlist</a>
+  </section>
+</main>
+
+<footer>
+  <p><span data-name>Atrium</span> · Made by Silas Apostol</p>
+  <p class="fine">ChatGPT is a trademark of OpenAI. Claude is a trademark of Anthropic. Muse is a trademark of Meta Platforms. Grok is a trademark of xAI. <span data-name>Atrium</span> is an independent app and is not affiliated with, sponsored by, or endorsed by any of them. Orb animation: Thinking Orbs by Jakub Antalik (MIT).</p>
+</footer>
+
+<script src="vendor/thinking-orbs.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
