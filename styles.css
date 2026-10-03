@@ -87,11 +87,11 @@ h1 { font-size: clamp(40px, 5.6vw, 68px); letter-spacing: -.045em; line-height: 
 #waitlist.done .connectors, #waitlist.done .emailrow { opacity: .45; pointer-events: none; }
 
 /* the app, with the orb and what it just did floating around it */
-.stage { position: relative; justify-self: center; width: min(330px, 78vw); margin-top: 30px; }
+.stage { position: relative; justify-self: center; width: min(330px, 78vw); margin-top: 150px; }
 .phone { border-radius: 44px; padding: 8px; background: #0A0A0B; box-shadow: 0 34px 70px -22px rgba(20, 30, 80, .5), inset 0 0 0 1.5px #2A2A2E; }
 .phone video { display: block; width: 100%; aspect-ratio: 1206 / 2622; object-fit: cover; border-radius: 36px; background: #F4F6FB; }
 .phone.tilt { transform: rotate(3deg); }
-.stage .orb { position: absolute; z-index: 2; width: 150px; height: 150px; left: -96px; top: -46px; filter: drop-shadow(0 12px 30px rgba(90, 100, 255, .3)); }
+.stage .orb { position: absolute; z-index: 2; width: 130px; height: 130px; left: 50%; top: -146px; translate: -50% 0; filter: drop-shadow(0 12px 30px rgba(90, 100, 255, .3)); }
 .chip { position: absolute; z-index: 3; background: rgba(255, 255, 255, .92); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border: 1px solid #fff; border-radius: 16px; padding: 10px 14px; box-shadow: 0 14px 34px rgba(20, 40, 90, .16); animation: bob 6s ease-in-out infinite; }
 .chip b { display: block; font-size: 13.5px; letter-spacing: -.01em; }
 .chip span { font-size: 12px; color: var(--ink-2); }
@@ -149,12 +149,11 @@ footer .fine { font-size: 12px; color: var(--ink-3); max-width: 760px; margin: 1
 /* ---------- smaller screens ---------- */
 @media (max-width: 1080px) {
   .chip.c1 { left: -40px; } .chip.c2 { right: -30px; } .chip.c3 { right: -20px; }
-  .stage .orb { left: -50px; }
 }
 @media (max-width: 900px) {
   .works span { display: none; }
   .hero { grid-template-columns: 1fr; padding-top: 34px; }
-  .stage { margin-top: 60px; }
+  .stage { margin-top: 150px; }
   .lines { grid-template-columns: 1fr; gap: 18px; }
   .lines p { border-left: 0; padding: 0; }
   .bento { grid-template-columns: 1fr; }
@@ -168,7 +167,7 @@ footer .fine { font-size: 12px; color: var(--ink-3); max-width: 760px; margin: 1
   .connectors { grid-template-columns: 1fr; }
   .emailrow { grid-template-columns: 1fr; }
   .stage { width: min(280px, 70vw); }
-  .stage .orb { width: 110px; height: 110px; left: -34px; top: -50px; }
+  .stage .orb { width: 104px; height: 104px; top: -118px; }
   .chip.c1 { left: -26px; } .chip.c2 { right: -22px; } .chip.c3 { right: -16px; }
   .tile { padding: 26px; }
   .tile.wide { grid-template-columns: 1fr; min-height: 0; }
